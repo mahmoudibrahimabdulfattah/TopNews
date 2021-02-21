@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Setting"
+    android:background="?attr/backgroundcolor">
+
+
+    <EditText
+        android:id="@+id/ed_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Country"
+        android:layout_margin="16dp"
+        android:textColor="?attr/cTS"/>
+
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send"
+        android:layout_below="@+id/ed_country"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:textColor="?attr/cTS"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/myswitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Night Mode"
+        android:textColor="?attr/cTS"
+        android:layout_below="@+id/btn_send" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4816438909032207/3004671828">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
